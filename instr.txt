@@ -1,10 +1,29 @@
+sudo apt update && sudo apt full-upgrade -y
+
+sudo apt install python3-pip
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+git clone https://github.com/GeneralConfidential/Quantum-Enhanced-MRI-Analysis.git
+
+mv Quantum-Enhanced-MRI-Analysis/ sdp
+
+git checkout dev
+
 source env/bin/activate
 
-sudo apt install python3.9
+pip install numpy pandas matplotlib
 
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python3.9 get-pip.py
+pip install "keras<2.14,>=2.13.1"
 
+pip install tensorflow==2.13.1
 
+pip install cirq-core==0.13.1 cirq-google==0.13.1
 
-pip install numpy pandas matplotlib keras tensorflow tensorflow-quantum cirq sympy
+pip install sympy
+
+pip install "protobuf>=3.19.6,<5.0.0dev"
