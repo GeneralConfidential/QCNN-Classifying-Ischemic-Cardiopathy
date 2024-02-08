@@ -27,3 +27,5 @@ pip install cirq-core==0.13.1 cirq-google==0.13.1
 pip install sympy
 
 pip install "protobuf>=3.19.6,<5.0.0dev"
+
+pip3 install opencv-python
