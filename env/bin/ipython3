@@ -1,4 +1,4 @@
-#!/home/raag/sdp/env/bin/python
+#!/home/raag/sdp/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
